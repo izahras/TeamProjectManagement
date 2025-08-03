@@ -125,52 +125,7 @@ dotnet run
 
 ## Data Models
 
-### User
-```json
-{
-  "id": 1,
-  "firstName": "John",
-  "lastName": "Doe",
-  "email": "john.doe@example.com",
-  "username": "johndoe",
-  "role": 3,
-  "createdAt": "2024-01-01T00:00:00Z",
-  "lastLoginAt": null,
-  "isActive": true
-}
-```
 
-### Task
-```json
-{
-  "id": 1,
-  "title": "Design Login UI",
-  "description": "Create a modern and responsive login interface",
-  "dueDate": "2024-01-08T00:00:00Z",
-  "priority": 3,
-  "effort": 8,
-  "status": 2,
-  "assignedTo": { /* User object */ },
-  "createdBy": { /* User object */ },
-  "epic": { /* Epic object */ },
-  "commentCount": 0,
-  "attachmentCount": 0
-}
-```
-
-### Epic
-```json
-{
-  "id": 1,
-  "title": "User Authentication System",
-  "description": "Implement a comprehensive user authentication system",
-  "dueDate": "2024-01-30T00:00:00Z",
-  "priority": 3,
-  "status": 2,
-  "createdBy": { /* User object */ },
-  "taskCount": 2,
-  "completedTaskCount": 0
-}
 ```
 
 ## Enums
@@ -257,11 +212,3 @@ dotnet ef database update
 3. Make your changes
 4. Add tests if applicable
 5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
-
-## Support
-
-For support and questions, please open an issue in the repository. 
